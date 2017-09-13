@@ -6,8 +6,6 @@ import { StatusBar } from "@ionic-native/status-bar";
 
 import { MyApp } from "./app.component";
 import { HomePage } from "../pages/home/home";
-import { MyModalContentPage } from "../pages/my-modal-content/my-modal-content";
-import { OtherModalPage } from "../pages/other-modal/other-modal";
 
 import { ComponentsModule } from "../components/components.module";
 import { MyModalContentPageModule } from "../pages/my-modal-content/my-modal-content.module";
@@ -15,15 +13,9 @@ import { OtherModalPageModule } from "../pages/other-modal/other-modal.module";
 
 @NgModule({
   declarations: [MyApp, HomePage],
-  imports: [
-    BrowserModule,
-    ComponentsModule,
-    MyModalContentPageModule,
-    OtherModalPageModule,
-    IonicModule.forRoot(MyApp)
-  ],
+  imports: [BrowserModule, ComponentsModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
-  entryComponents: [MyApp, HomePage, MyModalContentPage, OtherModalPage],
+  entryComponents: [MyApp, HomePage],
   providers: [
     StatusBar,
     SplashScreen,

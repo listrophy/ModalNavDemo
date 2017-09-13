@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
 import { NavController, ModalController } from "ionic-angular";
-import { MyModalContentPage } from "../my-modal-content/my-modal-content";
 import { MyModalWrapper } from "../../components/my-modal-wrapper/my-modal-wrapper";
 
 @Component({
@@ -14,6 +13,7 @@ export class HomePage {
   ) {}
 
   showModal() {
+    console.log("Showing modal");
     let modal = this.modalCtrl.create(MyModalWrapper);
     modal.present();
   }
