@@ -10,10 +10,18 @@ import { MyModalContentPage } from "../pages/my-modal-content/my-modal-content";
 import { OtherModalPage } from "../pages/other-modal/other-modal";
 
 import { ComponentsModule } from "../components/components.module";
+import { MyModalContentPageModule } from "../pages/my-modal-content/my-modal-content.module";
+import { OtherModalPageModule } from "../pages/other-modal/other-modal.module";
 
 @NgModule({
-  declarations: [MyApp, HomePage, MyModalContentPage, OtherModalPage],
-  imports: [BrowserModule, ComponentsModule, IonicModule.forRoot(MyApp)],
+  declarations: [MyApp, HomePage],
+  imports: [
+    BrowserModule,
+    ComponentsModule,
+    MyModalContentPageModule,
+    OtherModalPageModule,
+    IonicModule.forRoot(MyApp)
+  ],
   bootstrap: [IonicApp],
   entryComponents: [MyApp, HomePage, MyModalContentPage, OtherModalPage],
   providers: [
