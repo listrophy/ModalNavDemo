@@ -9,10 +9,10 @@ import { NavParams, ViewController } from "ionic-angular";
  */
 @Component({
   selector: "my-modal-wrapper",
-  template: `<ion-nav [root]="root" [rootParams]="rootParams"></ion-nav>`
+  template: `<ion-nav [root]="rootPage" [rootParams]="rootParams"></ion-nav>`
 })
 export class MyModalWrapper {
-  rootPage = "MyModalContent";
+  rootPage = "MyModalContentPage";
   rootParams;
 
   constructor(navParams: NavParams, private viewCtrl: ViewController) {

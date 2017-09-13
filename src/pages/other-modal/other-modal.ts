@@ -3,7 +3,8 @@ import {
   NavController,
   NavParams,
   ModalController,
-  ViewController
+  ViewController,
+  IonicPage
 } from "ionic-angular";
 
 /**
@@ -13,6 +14,7 @@ import {
  * Ionic pages and navigation.
  */
 
+@IonicPage()
 @Component({
   selector: "page-other-modal",
   templateUrl: "other-modal.html"

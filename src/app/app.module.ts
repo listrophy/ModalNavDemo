@@ -7,13 +7,11 @@ import { StatusBar } from "@ionic-native/status-bar";
 import { MyApp } from "./app.component";
 import { HomePage } from "../pages/home/home";
 
-import { ComponentsModule } from "../components/components.module";
-import { MyModalContentPageModule } from "../pages/my-modal-content/my-modal-content.module";
-import { OtherModalPageModule } from "../pages/other-modal/other-modal.module";
+import { MyModalWrapperModule } from "../components/my-modal-wrapper/my-modal-wrapper.module";
 
 @NgModule({
   declarations: [MyApp, HomePage],
-  imports: [BrowserModule, ComponentsModule, IonicModule.forRoot(MyApp)],
+  imports: [BrowserModule, MyModalWrapperModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
   entryComponents: [MyApp, HomePage],
   providers: [

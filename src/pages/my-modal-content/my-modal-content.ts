@@ -1,14 +1,13 @@
 import { Component } from "@angular/core";
-import { ModalController, ViewController, NavController } from "ionic-angular";
+import {
+  ModalController,
+  ViewController,
+  NavController,
+  IonicPage
+} from "ionic-angular";
 import { OtherModalPage } from "../other-modal/other-modal";
 
-/**
- * Generated class for the MyModalContentPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+@IonicPage()
 @Component({
   selector: "page-my-modal-content",
   templateUrl: "my-modal-content.html"
